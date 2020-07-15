@@ -467,6 +467,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
   width: 100vw;
   padding: 8vh 0;
@@ -737,7 +741,11 @@ footer {
 }
 
 @media screen and (min-width: 760px) {
-  .gallery-mountains {
+  .gallery-mountains,
+  .gallery-seascape,
+  .gallery-cityscape,
+  .gallery-woodland,
+  .gallery-Wildlife {
     width: 90vw;
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
@@ -751,7 +759,6 @@ footer {
         grid-template-columns: repeat(8, 1fr);
     -ms-grid-rows: (7vw)[41];
         grid-template-rows: repeat(41, 7vw);
-    border: 4px solid red;
   }
 }
 
@@ -891,7 +898,12 @@ footer {
   grid-row: 36 / span 6;
 }
 
-.gallery-show5 h1 {
-  text-align: center;
+.heading-2 {
+  color: var(--color-grey-light-1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 3.4rem;
+  margin: 4rem 0;
 }
 /*# sourceMappingURL=gallery.css.map */

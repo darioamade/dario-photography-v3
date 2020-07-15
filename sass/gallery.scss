@@ -333,7 +333,7 @@ body {
 .gallery-show1 a,
 .gallery-show2 a,
 .gallery-show3 a,
-.gallery-show4  a {
+.gallery-show4 a {
     text-decoration: none;
     list-style: none;
 }
@@ -358,6 +358,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: 0 auto;
   width: 100vw;
   padding: 8vh 0;
@@ -578,7 +579,11 @@ footer {
 }
 //**************************** PAGE SHOW CASE GALLERY ***********************/
 @media screen and (min-width:760px) {
-    .gallery-mountains{
+    .gallery-mountains,
+    .gallery-seascape,
+    .gallery-cityscape,
+    .gallery-woodland,
+    .gallery-Wildlife{
         width: 90vw;
         grid-column-gap: 1.5rem;
         grid-row-gap: 1.5rem;
@@ -591,11 +596,13 @@ footer {
         grid-template-columns: repeat(8, 1fr);
         // grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         grid-template-rows: repeat(41, 7vw);
-        border: 4px solid red;
+    
     }
+  
 }
 
-.gallery-title{
+
+.gallery-title {
     text-align: center;
     font-family: "Open sans", sans-serif;
     font-weight: 500;
@@ -668,6 +675,12 @@ footer {
     grid-row: 36 / span 6;
   }
 
-  .gallery-show5 h1{
-      text-align: center;
-  }
+ .heading-2{
+    color: var(--color-grey-light-1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 3.4rem;
+    margin: 4rem 0;
+
+ }
