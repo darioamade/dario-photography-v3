@@ -1,0 +1,25 @@
+{
+  "name": "Dario Amade",
+  "version": "1.0.0",
+  "description": "Photography website page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "Dario Amade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darioamade/dario-photography-v3/issues"
+  },
+  "homepage": "https://github.com/darioamade/dario-photography-v3#readme",
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
