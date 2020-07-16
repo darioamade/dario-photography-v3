@@ -107,7 +107,7 @@ body {
   animation-play-state: running;
   animation-timing-function: ease-in;
   backface-visibility: hidden;
-  transition: all 3s;
+  transition: all 2s;
 }
 
 @media only screen and (max-width: 31.25em) {
@@ -670,8 +670,8 @@ body {
   content: "+";
   font-size: 5rem;
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 0rem;
+  right: 0rem;
   width: 100%;
   height: 100%;
   color: #fff;
@@ -680,10 +680,10 @@ body {
   border-radius: 50%;
   background: rgba(6, 6, 6, 0);
   transition: all 2s;
-  @media (max-width: 768px) {
-    top: 0rem;
-    left: 0rem;
-    font-size: 7rem;
+   @media (max-width: 768px) {
+  //   top: 0rem;
+  //   right: 0rem;
+   font-size: 7rem;
   }
 }
 
@@ -712,10 +712,10 @@ body {
   border-radius: 50%;
   background: rgba(14, 14, 14, 0);
   transition: transform 0.5s;
-  @media (max-width: 768px) {
-    top: 2rem;
-    right: 2rem;
-  }
+  // @media (max-width: 768px) {
+  //   top: 2rem;
+  //   right: 2rem;
+  // }
 }
 
 .overlay.active {
@@ -724,7 +724,7 @@ body {
 }
 
 .menu {
-  background: linear-gradient(rgba(0, 0, 0, 0.673), rgba(19, 18, 18, 0.622)),
+   background: linear-gradient(rgba(0, 0, 0, 0.673), rgba(19, 18, 18, 0.622)),
     url("/img/32-small.jpg") center/cover no-repeat;
   position: fixed;
   top: 0;
@@ -734,10 +734,10 @@ body {
   overflow: auto;
   z-index: 1;
   visibility: hidden;
-  @media (max-width: 768px) {
-    top: 2rem;
-    right: 2rem;
-  }
+  // @media (max-width: 768px) {
+  //   top: 2rem;
+  //   right: 2rem;
+  // }
 }
 
 .menu.active {

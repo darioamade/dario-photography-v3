@@ -83,19 +83,23 @@ body {
   background-color: #242424;
 }
 .header2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("/img/26-small.jpg") center/cover no-repeat;
+  // background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  //   url("/img/26-small.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/img/florest.jpg") center/cover no-repeat;
 }
 .header3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/img/header3.jpg") center/cover no-repeat;
+  // background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url("/img/header3.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url("/img/florest.jpg") center/cover no-repeat;
 }
 .header4 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("/img/black-sony-dslr-camera-2929411.jpg") center/cover no-repeat;
 }
 .header6 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
   url("/img/florest.jpg") center/cover no-repeat;
 
 }
@@ -197,10 +201,15 @@ body {
   }
 }
 
-.hr {
+ .hr {
   width: 80rem;
   margin: 0 auto;
-}
+ }
+
+ @media only screen and (max-width:768px){
+  .hr{
+    width: 20rem;
+}}
 
 .header_content-title h1,
 .header2_content-title h1,
@@ -948,6 +957,21 @@ a {
 @media screen and (max-width: 768px) {
   .nav-down {
     height: 30rem;
+    width: 45rem;
+    margin: 2rem auto;
+  }
+}
+@media screen and (max-width: 568px) {
+  .nav-down {
+    height: 70rem;
+    width: 45rem;
+    margin: 2rem auto;
+  }
+}
+@media screen and (max-width: 374px) {
+  .nav-down {
+    height: 100rem;
+    width: 100%;
     margin: 2rem auto;
   }
 }
@@ -1006,6 +1030,9 @@ a {
   overflow: hidden;
   padding: 8vh;
   margin: 0 auto;
+  @media only screen and (max-width:425px){
+    min-height: 50vh;
+  }
 }
 
 .bg-video {
@@ -1019,6 +1046,9 @@ a {
   opacity: 0.95;
   overflow: hidden;
   margin: 0 auto;
+  @media only screen and (max-width:425px){
+    height: 50%;
+  }
 }
 
 .bg-video__content {

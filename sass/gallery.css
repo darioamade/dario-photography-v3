@@ -89,13 +89,13 @@ body {
 }
 
 .header2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("/img/26-small.jpg") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/26-small.jpg") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/img/florest.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/florest.jpg") center/cover no-repeat;
 }
 
 .header3 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("/img/header3.jpg") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/header3.jpg") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/img/florest.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/florest.jpg") center/cover no-repeat;
 }
 
 .header4 {
@@ -104,8 +104,8 @@ body {
 }
 
 .header6 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("/img/florest.jpg") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/florest.jpg") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/img/florest.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/florest.jpg") center/cover no-repeat;
 }
 
 .header_content,
@@ -292,6 +292,12 @@ body {
 .hr {
   width: 80rem;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .hr {
+    width: 20rem;
+  }
 }
 
 .header_content-title h1,
@@ -1287,6 +1293,23 @@ a {
 @media screen and (max-width: 768px) {
   .nav-down {
     height: 30rem;
+    width: 45rem;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .nav-down {
+    height: 70rem;
+    width: 45rem;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .nav-down {
+    height: 100rem;
+    width: 100%;
     margin: 2rem auto;
   }
 }
@@ -1358,6 +1381,12 @@ a {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 425px) {
+  .gear-video {
+    min-height: 50vh;
+  }
+}
+
 .bg-video {
   position: absolute;
   top: 50%;
@@ -1370,6 +1399,12 @@ a {
   opacity: 0.95;
   overflow: hidden;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 425px) {
+  .bg-video {
+    height: 50%;
+  }
 }
 
 .bg-video__content {
