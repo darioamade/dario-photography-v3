@@ -147,6 +147,9 @@ body {
 #focusgreen {
   color: rgb(26, 186, 90);
 }
+#focusblack {
+  color: rgb(11, 11, 11);
+}
 .header_content-title,
 .header2_content-title,
 .header3_content-title {
@@ -595,8 +598,7 @@ footer {
   .gallery-mountains,
   .gallery-seascape,
   .gallery-cityscape,
-  .gallery-woodland,
-  .gallery-Wildlife {
+  .gallery-woodland{
     width: 90vw;
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
@@ -605,11 +607,20 @@ footer {
     margin: 0 auto;
     max-width: 144rem;
     display: grid;
-
     grid-template-columns: repeat(8, 1fr);
     // grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-template-rows: repeat(41, 7vw);
   }
+}
+.wildlife{
+  margin: 0 auto;
+  max-width: 144rem;
+}
+
+
+.gallery-Woodland{
+  margin: 0 auto;
+  max-width: 144rem;
 }
 
 .gallery-title {
