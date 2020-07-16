@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/uks8kfa.css");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 :root {
   --color-primary: #0d0d0d;
   --color-primary-li: #011526;
@@ -73,7 +75,8 @@ body {
 .header,
 .header2,
 .header3,
-.header4 {
+.header4,
+.header5 {
   width: 100vw;
   margin: 0 auto;
   background-color: #242424;
@@ -94,7 +97,8 @@ body {
 .header_content,
 .header2_content,
 .header3_content,
-.header4_content{
+.header4_content,
+.header5_content {
   padding: 4rem 0;
   min-height: 20vh;
   width: 100vw;
@@ -108,8 +112,9 @@ body {
 }
 .header_content-links,
 .header2_content-links,
-.header3_content-links ,
-.header4_content-links{
+.header3_content-links,
+.header4_content-links,
+.header5_content-links {
   background-color: #24242404;
   flex: 1;
   width: 90vw;
@@ -160,8 +165,9 @@ body {
 }
 .header_content-title,
 .header2_content-title,
-.header3_content-title ,
-.header4_content-title {
+.header3_content-title,
+.header4_content-title,
+.header5_content-title {
   background-color: #24242400;
   flex: 1;
   width: 90vw;
@@ -189,7 +195,8 @@ body {
 .header_content-title h1,
 .header2_content-title h1,
 .header3_content-title h1,
-.header4_content-title h1  {
+.header4_content-title h1,
+.header5_content-title h1 {
   color: var(--color-grey-light-1);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -414,6 +421,18 @@ body {
   color: #fff;
 }
 
+.gallery-about .heading-5{
+  font-family: "Open sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: .8rem;
+  letter-spacing: 2px;
+  text-transform: initial;
+  text-align: start;
+  color: rgb(232, 229, 229);
+
+}
+
 /******************************  SUBSCRIBE**********************************/
 .subscribe {
   background-color: #242424;
@@ -608,7 +627,7 @@ footer {
   .gallery-mountains,
   .gallery-seascape,
   .gallery-cityscape,
-  .gallery-woodland{
+  .gallery-woodland {
     width: 90vw;
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
@@ -622,13 +641,12 @@ footer {
     grid-template-rows: repeat(41, 7vw);
   }
 }
-.wildlife{
+.wildlife {
   margin: 0 auto;
   max-width: 144rem;
 }
 
-
-.gallery-Woodland{
+.gallery-Woodland {
   margin: 0 auto;
   max-width: 144rem;
 }
@@ -716,17 +734,32 @@ footer {
 }
 
 /*********************** TUTORIALS****************/
-.gallery-show5 p {
+.gallery-show5 p,
+.gallery-about p {
   margin-bottom: 1rem;
   text-align: center;
-  font-family: "Kameron",Georgia,serif;
+  font-family: "Kameron", Georgia, serif;
   font-family: freight-sans-pro;
   font-weight: 400;
   font-style: normal;
   font-size: 1.8rem;
   letter-spacing: 0px;
   line-height: 1.6em;
-  color: rgba(255,255,255,.6);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.gallery-about p {
+  text-align: start;
+  margin-top: 2rem;
+}
+
+.gallery-about .myname {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: 3.8rem;
+  letter-spacing:1px;
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 .gallery-tutorials {
@@ -781,7 +814,7 @@ a {
   flex-direction: row;
   max-width: 120rem;
   margin: 0 auto;
-  @media only screen and (max-width:768px){
+  @media only screen and (max-width: 768px) {
     flex-direction: column;
   }
 }
@@ -801,10 +834,10 @@ a {
   border-radius: 4rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/img/4-small.jpg") center/cover no-repeat;
-    @media only screen and (max-width:768px){
-      min-height: 35rem;
-      width: 90%;
-    }
+  @media only screen and (max-width: 768px) {
+    min-height: 35rem;
+    width: 90%;
+  }
 }
 
 .video-img-2 {
@@ -816,19 +849,16 @@ a {
   margin-bottom: 0rem;
   margin-top: 0rem;
 }
-#bottomMargin2rem{
+#bottomMargin2rem {
   margin: 5rem 0;
-
 }
 
-
-.gallery-tutorials2{
+.gallery-tutorials2 {
   position: relative;
   min-height: 100vh;
   width: 100vw;
   overflow: hidden;
   padding: 8vh;
-
 }
 .bg-video {
   position: absolute;
@@ -872,9 +902,9 @@ a {
   }
 }
 
-/*******************  GEAR *******************/
+/*******************  GEAR & ABOUT*******************/
 
-.gallery-gear{
+.gallery-gear {
   margin: 0 auto;
   max-width: 120rem;
   padding: 5vh 0;
@@ -882,9 +912,18 @@ a {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     flex-direction: column;
   }
+}
+
+.gallery-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 80rem;
 }
 
 .nav-down {
@@ -895,7 +934,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-
 }
 
 @media screen and (max-width: 768px) {
@@ -921,10 +959,10 @@ a {
   letter-spacing: 2px;
   color: #5eb5ae;
   line-height: 1.6;
-  margin: 2rem ;
+  margin: 2rem;
   cursor: pointer;
   transition: all 0.2 ease;
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     font-size: 1.4rem;
   }
 }
@@ -937,7 +975,7 @@ a {
 
 /*----------------------------------------------------------------*/
 
-.gallery-supportted{
+.gallery-supportted {
   margin: 0 auto;
   max-width: 120rem;
   padding: 5vh 0;
@@ -947,8 +985,67 @@ a {
   align-items: center;
 }
 
-.amazon-logo{
+.amazon-logo {
   width: 20rem;
   height: 10rem;
 }
 
+.gear-video {
+  position: relative;
+  min-height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+  padding: 8vh;
+  margin: 0 auto;
+}
+
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 80%;
+  z-index: -1;
+  opacity: 0.95;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#white {
+  color: #fff;
+}
+.center-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+  .center-text {
+    height: 60%;
+    width: 100%;
+  }
+}
+
+/*******************  ABOUT*******************/
+.about-logo {
+  width: 60rem;
+  height: 70rem;
+  border-radius: 2px;
+}

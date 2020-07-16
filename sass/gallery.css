@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/uks8kfa.css");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 :root {
   --color-primary: #0d0d0d;
   --color-primary-li: #011526;
@@ -78,7 +80,8 @@ body {
 .header,
 .header2,
 .header3,
-.header4 {
+.header4,
+.header5 {
   width: 100vw;
   margin: 0 auto;
   background-color: #242424;
@@ -102,7 +105,8 @@ body {
 .header_content,
 .header2_content,
 .header3_content,
-.header4_content {
+.header4_content,
+.header5_content {
   padding: 4rem 0;
   min-height: 20vh;
   width: 100vw;
@@ -124,7 +128,8 @@ body {
 .header_content-links,
 .header2_content-links,
 .header3_content-links,
-.header4_content-links {
+.header4_content-links,
+.header5_content-links {
   background-color: #24242404;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -144,7 +149,8 @@ body {
   .header_content-links,
   .header2_content-links,
   .header3_content-links,
-  .header4_content-links {
+  .header4_content-links,
+  .header5_content-links {
     display: none;
   }
 }
@@ -152,7 +158,8 @@ body {
 .header_content-links_nav__list,
 .header2_content-links_nav__list,
 .header3_content-links_nav__list,
-.header4_content-links_nav__list {
+.header4_content-links_nav__list,
+.header5_content-links_nav__list {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,7 +181,8 @@ body {
 .header_content-links_nav__list__nav__link,
 .header2_content-links_nav__list__nav__link,
 .header3_content-links_nav__list__nav__link,
-.header4_content-links_nav__list__nav__link {
+.header4_content-links_nav__list__nav__link,
+.header5_content-links_nav__list__nav__link {
   text-decoration: none;
   color: var(--color-grey-light-1);
   display: inline-block;
@@ -190,7 +198,8 @@ body {
   .header_content-links_nav__list__nav__link,
   .header2_content-links_nav__list__nav__link,
   .header3_content-links_nav__list__nav__link,
-  .header4_content-links_nav__list__nav__link {
+  .header4_content-links_nav__list__nav__link,
+  .header5_content-links_nav__list__nav__link {
     font-size: 1rem;
   }
 }
@@ -199,7 +208,8 @@ body {
   .header_content-links_nav__list__nav__link,
   .header2_content-links_nav__list__nav__link,
   .header3_content-links_nav__list__nav__link,
-  .header4_content-links_nav__list__nav__link {
+  .header4_content-links_nav__list__nav__link,
+  .header5_content-links_nav__list__nav__link {
     font-size: 0.8rem;
   }
 }
@@ -210,7 +220,9 @@ body {
 .header3_content-links_nav__list__nav__link:hover,
 .header3_content-links_nav__list__nav__link:active,
 .header4_content-links_nav__list__nav__link:hover,
-.header4_content-links_nav__list__nav__link:active {
+.header4_content-links_nav__list__nav__link:active,
+.header5_content-links_nav__list__nav__link:hover,
+.header5_content-links_nav__list__nav__link:active {
   color: #969494;
 }
 
@@ -225,7 +237,8 @@ body {
 .header_content-title,
 .header2_content-title,
 .header3_content-title,
-.header4_content-title {
+.header4_content-title,
+.header5_content-title {
   background-color: #24242400;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -267,7 +280,8 @@ body {
 .header_content-title h1,
 .header2_content-title h1,
 .header3_content-title h1,
-.header4_content-title h1 {
+.header4_content-title h1,
+.header5_content-title h1 {
   color: var(--color-grey-light-1);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -541,6 +555,17 @@ body {
   text-transform: initial;
   text-align: center;
   color: #fff;
+}
+
+.gallery-about .heading-5 {
+  font-family: "Open sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: .8rem;
+  letter-spacing: 2px;
+  text-transform: initial;
+  text-align: start;
+  color: #e8e5e5;
 }
 
 /******************************  SUBSCRIBE**********************************/
@@ -960,10 +985,11 @@ footer {
 }
 
 /*********************** TUTORIALS****************/
-.gallery-show5 p {
+.gallery-show5 p,
+.gallery-about p {
   margin-bottom: 1rem;
   text-align: center;
-  font-family: "Kameron",Georgia,serif;
+  font-family: "Kameron", Georgia, serif;
   font-family: freight-sans-pro;
   font-weight: 400;
   font-style: normal;
@@ -971,6 +997,20 @@ footer {
   letter-spacing: 0px;
   line-height: 1.6em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.gallery-about p {
+  text-align: start;
+  margin-top: 2rem;
+}
+
+.gallery-about .myname {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: 3.8rem;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
 }
 
 .gallery-tutorials {
@@ -1163,7 +1203,7 @@ a {
   }
 }
 
-/*******************  GEAR *******************/
+/*******************  GEAR & ABOUT*******************/
 .gallery-gear {
   margin: 0 auto;
   max-width: 120rem;
@@ -1189,6 +1229,24 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.gallery-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  max-width: 80rem;
 }
 
 .nav-down {
@@ -1272,5 +1330,75 @@ a {
 .amazon-logo {
   width: 20rem;
   height: 10rem;
+}
+
+.gear-video {
+  position: relative;
+  min-height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+  padding: 8vh;
+  margin: 0 auto;
+}
+
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 80%;
+  width: 80%;
+  z-index: -1;
+  opacity: 0.95;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#white {
+  color: #fff;
+}
+
+.center-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+  .center-text {
+    height: 60%;
+    width: 100%;
+  }
+}
+
+/*******************  ABOUT*******************/
+.about-logo {
+  width: 60rem;
+  height: 70rem;
+  border-radius: 2px;
 }
 /*# sourceMappingURL=gallery.css.map */
