@@ -25,7 +25,7 @@ sendBtn.addEventListener("click", sendMsg)
       alert('Please enter Valid value')
     }
     else {
-      messageOut.innerHTML = `Message sent!`;
+      messageOut.innerHTML = `Subscribed!`;
       messageIn.value = '';
     }
    

@@ -76,7 +76,8 @@ body {
 .header2,
 .header3,
 .header4,
-.header5 {
+.header5,
+.header6 {
   width: 100vw;
   margin: 0 auto;
   background-color: #242424;
@@ -93,12 +94,18 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("/img/black-sony-dslr-camera-2929411.jpg") center/cover no-repeat;
 }
+.header6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("/img/florest.jpg") center/cover no-repeat;
+
+}
 
 .header_content,
 .header2_content,
 .header3_content,
 .header4_content,
-.header5_content {
+.header5_content,
+.header6_content {
   padding: 4rem 0;
   min-height: 20vh;
   width: 100vw;
@@ -107,14 +114,16 @@ body {
   flex-direction: column;
 }
 .header3_content,
-.header4_content {
+.header4_content,
+.header6_content {
   min-height: 30vh;
 }
 .header_content-links,
 .header2_content-links,
 .header3_content-links,
 .header4_content-links,
-.header5_content-links {
+.header5_content-links ,
+.header6_content-links{
   background-color: #24242404;
   flex: 1;
   width: 90vw;
@@ -167,7 +176,8 @@ body {
 .header2_content-title,
 .header3_content-title,
 .header4_content-title,
-.header5_content-title {
+.header5_content-title,
+.header6_content-title {
   background-color: #24242400;
   flex: 1;
   width: 90vw;
@@ -421,16 +431,15 @@ body {
   color: #fff;
 }
 
-.gallery-about .heading-5{
+.gallery-about .heading-5 {
   font-family: "Open sans", sans-serif;
   font-weight: 500;
   font-size: 1.4rem;
-  margin: .8rem;
+  margin: 0.8rem;
   letter-spacing: 2px;
   text-transform: initial;
   text-align: start;
   color: rgb(232, 229, 229);
-
 }
 
 /******************************  SUBSCRIBE**********************************/
@@ -757,7 +766,7 @@ footer {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-size: 3.8rem;
-  letter-spacing:1px;
+  letter-spacing: 1px;
   text-align: center;
   color: rgb(255, 255, 255);
 }
@@ -1048,4 +1057,225 @@ a {
   width: 60rem;
   height: 70rem;
   border-radius: 2px;
+}
+
+/*******************  CONTACT FORM*******************/
+.contact-form {
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fields {
+  width: 60rem;
+  min-height: 40rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #c6c6c600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fields label {
+  display: block;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.075em;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem 0;
+
+  @media screen and (max-width: 980px) {
+    font-size: 0.9rem;
+  }
+}
+
+.fields input[type="text"],
+.fields input[type="password"],
+.fields input[type="email"],
+select,
+textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: transparent;
+  border-radius: 0;
+  border: solid 2px;
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 2rem 4rem;
+  text-decoration: none;
+  width: 100%;
+}
+
+.fields input[type="text"]:invalid,
+.fields input[type="password"]:invalid,
+.fields input[type="email"]:invalid,
+select:invalid,
+textarea:invalid {
+  box-shadow: none;
+}
+
+select {
+  background-size: 1.25rem;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1rem) center;
+  height: 3rem;
+  padding-right: 3rem;
+  text-overflow: ellipsis;
+}
+select:focus::-ms-value {
+  background-color: transparent;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.fields input[type="text"],
+.fields input[type="password"],
+.fields input[type="email"],
+select {
+  height: 3rem;
+}
+
+textarea {
+  padding: 1rem 6rem;
+  width: 100%;
+}
+
+.fields input[type="checkbox"],
+.fields input[type="radio"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: block;
+  float: left;
+  margin-right: -2rem;
+  opacity: 0;
+  width: 1rem;
+  z-index: -1;
+}
+.fields input[type="checkbox"] + label,
+.fields input[type="radio"] + label {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: 0;
+  font-family: inherit;
+  text-transform: none;
+  font-weight: 300;
+  padding-left: 2.8rem;
+  padding-right: 1rem;
+  position: relative;
+}
+.fields input[type="checkbox"] + label:before,
+.fields input[type="radio"] + label:before {
+  -moz-osx-font-smoothing: gr yscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  text-transform: none !important;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.fields input[type="checkbox"] + label:before,
+.fields input[type="radio"] + label:before {
+  border-radius: 0;
+  border: solid 2px;
+  content: "";
+  display: inline-block;
+  font-size: 0.8rem;
+  height: 1.8rem;
+  left: 0;
+  line-height: 1.65rem;
+  position: absolute;
+  text-align: center;
+  top: -0.125rem;
+  width: 1.8rem;
+}
+
+.fields input[type="checkbox"]:checked + label:before,
+input[type="radio"]:checked + label:before {
+  content: "\f00c";
+}
+
+.fields input[type="checkbox"] + label:before {
+  border-radius: 0;
+}
+
+.fields input[type="radio"] + label:before {
+  border-radius: 100%;
+}
+label {
+  color: #f0f2f4;
+}
+
+.fields input[type="text"],
+.fields input[type="password"],
+.fields input[type="email"],
+select,
+textarea {
+  border-color: #eeeeee;
+}
+
+.fields input[type="text"]:focus,
+.fieldsinput[type="password"]:focus,
+.fields input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #0b5e3e8a;
+}
+
+select option {
+  background-color: #ffffff;
+  color: #212931;
+}
+
+.select-wrapper:before {
+  color: #eeeeee;
+}
+
+.fields input[type="checkbox"] + label,
+.fields input[type="radio"] + label {
+  color: #212931;
+}
+
+.fields input[type="checkbox"] + label:before,
+.fields input[type="radio"] + label:before {
+  border-color: #eeeeee;
+}
+
+.fields input[type="checkbox"]:checked + label:before,
+.fields input[type="radio"]:checked + label:before {
+  background-color: #212931;
+  border-color: #212931;
+  color: #ffffff;
+}
+
+.fields input[type="checkbox"]:focus + label:before,
+.fields input[type="radio"]:focus + label:before {
+  border-color: #18bfef;
+}
+
+.fields input[type="reset"],
+.fields input[type="button"],
+.fields button,
+.fields .button {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #717981;
+  color: #717981 !important;
 }
