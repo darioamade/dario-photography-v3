@@ -85,23 +85,22 @@ body {
 .header2 {
   // background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
   //   url("/img/26-small.jpg") center/cover no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("/img/florest.jpg") center/cover no-repeat;
 }
 .header3 {
   // background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
   //   url("/img/header3.jpg") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  url("/img/florest.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/img/florest.jpg") center/cover no-repeat;
 }
 .header4 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("/img/black-sony-dslr-camera-2929411.jpg") center/cover no-repeat;
 }
 .header6 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  url("/img/florest.jpg") center/cover no-repeat;
-
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/img/florest.jpg") center/cover no-repeat;
 }
 
 .header_content,
@@ -120,14 +119,14 @@ body {
 .header3_content,
 .header4_content,
 .header6_content {
-  min-height: 30vh;
+  min-height: 25vh;
 }
 .header_content-links,
 .header2_content-links,
 .header3_content-links,
 .header4_content-links,
-.header5_content-links ,
-.header6_content-links{
+.header5_content-links,
+.header6_content-links {
   background-color: #24242404;
   flex: 1;
   width: 90vw;
@@ -147,15 +146,22 @@ body {
     margin: 0 4rem;
     list-style: none;
     &__nav__link {
-      text-decoration: none;
-      color: var(--color-grey-light-1);
       display: inline-block;
       padding: 3rem 2rem;
       position: relative;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      text-decoration: none;
       font-weight: 500;
-      font-size: 1.4rem;
+      font-size: 14px;
+      letter-spacing: 1px;
+      font-family: inherit;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+      line-height: 1em;
+      color: #fff;
       @media (min-width: 1143px) {
         font-size: 1rem;
       }
@@ -164,14 +170,14 @@ body {
       }
       &:hover,
       &:active {
-        color: rgb(150, 148, 148);
+        color: #5eb5ae;
       }
     }
   }
 }
 
 #focusgreen {
-  color: rgb(26, 186, 90);
+  color: #5eb5ae;
 }
 #focusblack {
   color: rgb(11, 11, 11);
@@ -201,15 +207,12 @@ body {
   }
 }
 
- .hr {
-  width: 80rem;
-  margin: 0 auto;
- }
-
- @media only screen and (max-width:768px){
-  .hr{
-    width: 20rem;
-}}
+.hr {
+  width: 80vw;
+  border: none;
+  height: 1px;
+  background-color: rgb(145, 144, 144);
+}
 
 .header_content-title h1,
 .header2_content-title h1,
@@ -429,7 +432,8 @@ body {
   cursor: pointer;
 }
 
-.heading-3 {
+.heading-3,
+.heading-6 {
   text-align: center;
   font-family: "Open sans", sans-serif;
   font-weight: 500;
@@ -438,6 +442,11 @@ body {
   text-transform: initial;
   text-align: center;
   color: #fff;
+}
+
+.heading-6 {
+  font-size: 1.8rem;
+  text-transform: capitalize;
 }
 
 .gallery-about .heading-5 {
@@ -569,19 +578,28 @@ body {
   font-weight: 400;
   font-family: inherit;
 }
-
+.newsletter-form .form__group button,
 button {
   display: block;
   font-size: 2.2rem;
   margin: 1rem auto;
   padding: 0.5rem 6rem;
   color: rgb(254, 254, 254);
-  background-color: #18833f;
+  background-color: #5eb5ae;
   border: none;
+  padding: 1rem 4rem;
   border-radius: 8px;
   text-transform: uppercase;
 }
+.newsletter-form .form__group button:focus,
+button:focus {
+  outline: none;
+}
 
+.newsletter-form .form__group button {
+  padding: 2rem 10rem;
+}
+.newsletter-form .form__group button:hover,
 button:hover {
   opacity: 0.8;
   cursor: pointer;
@@ -1030,7 +1048,7 @@ a {
   overflow: hidden;
   padding: 8vh;
   margin: 0 auto;
-  @media only screen and (max-width:425px){
+  @media only screen and (max-width: 425px) {
     min-height: 50vh;
   }
 }
@@ -1046,7 +1064,7 @@ a {
   opacity: 0.95;
   overflow: hidden;
   margin: 0 auto;
-  @media only screen and (max-width:425px){
+  @media only screen and (max-width: 425px) {
     height: 50%;
   }
 }
@@ -1308,4 +1326,41 @@ select option {
   background-color: transparent;
   box-shadow: inset 0 0 0 2px #717981;
   color: #717981 !important;
+}
+
+/***************** NEWSLETTER *******************/
+
+.newsletter-form {
+  background-color: inherit;
+  width: 100vw;
+  padding: 5vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-form .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-form .container .form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: rgb(45, 43, 43);
+  border-radius: 2px;
+  background-color: ccc;
+  border-bottom: 3px solid transparent;
+  border: none;
+  display: block;
+  transition: all 0.3s;
+  padding: 2rem 8rem;
+  margin: 1rem;
+  border-radius: 5px;
+  border: 3px solid #ccc;
+  outline: none;
 }
