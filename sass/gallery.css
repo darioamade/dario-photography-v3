@@ -297,7 +297,7 @@ body {
 }
 
 .hr {
-  width: 80vw;
+  width: 50vw;
   border: none;
   height: 1px;
   background-color: #919090;
@@ -1777,7 +1777,7 @@ select option {
 .newsletter-grid {
   width: 120rem;
   margin: 0 auto;
-  background-color: red;
+  background-color: inherit;
   padding: 5vh;
 }
 
@@ -1796,9 +1796,17 @@ select option {
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+@media only screen and (max-width: 375px) {
+  .newsletter-grid {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
 .card {
   height: 30rem;
   width: 100%;
+  padding: 1rem;
   background-color: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1807,6 +1815,30 @@ select option {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media only screen and (max-width: 1116px) {
+  .card {
+    height: 40rem;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .card {
+    height: 50rem;
+  }
+}
+
+@media only screen and (max-width: 556px) {
+  .card {
+    height: 60rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    height: 70rem;
+  }
 }
 
 .card-img {

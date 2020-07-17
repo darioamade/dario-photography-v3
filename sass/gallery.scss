@@ -208,7 +208,7 @@ body {
 }
 
 .hr {
-  width: 80vw;
+  width: 50vw;
   border: none;
   height: 1px;
   background-color: rgb(145, 144, 144);
@@ -1368,7 +1368,7 @@ select option {
 .newsletter-grid {
   width: 120rem;
   margin: 0 auto;
-  background-color: red;
+  background-color: inherit;
   padding: 5vh;
 }
 
@@ -1381,15 +1381,31 @@ select option {
   grid-template-columns: repeat(12, 1fr);
   grid-template-columns: repeat(12,  minmax(240px, 1fr));
   grid-template-columns: repeat(auto-fit,  minmax(280px, 1fr));
+  @media only screen and (max-width:375px){
+    grid-template-columns: repeat(auto-fit,  minmax(200px, 1fr));
+  }
   
 }
 
 .card{
   height: 30rem;
   width: 100%;
+  padding: 1rem;
   background-color: inherit;
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width:1116px){
+    height: 40rem;
+  }
+  @media only screen and (max-width:690px){
+    height: 50rem;
+  }
+  @media only screen and (max-width:556px){
+    height: 60rem;
+  }
+  @media only screen and (max-width:375px){
+    height: 70rem;
+  }
   &-img{
     flex: 0 0 70%;
   }

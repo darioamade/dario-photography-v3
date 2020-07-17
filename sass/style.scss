@@ -76,7 +76,7 @@ body {
   align-items: center;
   z-index: 1000;
   overflow: hidden;
-  transition: all 6s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 .preload-finish {
@@ -100,7 +100,7 @@ body {
   overflow: hidden;
   animation: animate;
   animation-direction: alternate-reverse;
-  animation-delay: 6s;
+  animation-delay: 3s;
   animation-duration: 10s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
@@ -394,11 +394,11 @@ body {
   font-family: "Playfair Display";
   margin-bottom: 4rem;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  animation-delay: 6s;
-  animation-name: moveInRight;
-  animation-duration: 3s;
-  animation-timing-function: ease-in;
+  // opacity: 0;
+  // animation-delay: 6s;
+  // animation-name: moveInRight;
+  // animation-duration: 3s;
+  // animation-timing-function: ease-in;
   @media only screen and (max-width: 75em) {
     flex: 0 0 60%;
     justify-content: center;
@@ -446,10 +446,10 @@ body {
   letter-spacing: 8px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   animation-delay: 6s;
-  opacity: 0;
-  animation-name: moveInLeft;
-  animation-duration: 3s;
-  animation-timing-function: ease-in;
+  // opacity: 0;
+  // animation-name: moveInLeft;
+  // animation-duration: 3s;
+  // animation-timing-function: ease-in;
   @media only screen and (max-width: 75em) {
     flex: 0 0 20%;
     justify-content: center;
@@ -680,10 +680,10 @@ body {
   border-radius: 50%;
   background: rgba(6, 6, 6, 0);
   transition: all 2s;
-   @media (max-width: 768px) {
-  //   top: 0rem;
-  //   right: 0rem;
-   font-size: 7rem;
+  @media (max-width: 768px) {
+    //   top: 0rem;
+    //   right: 0rem;
+    font-size: 7rem;
   }
 }
 
@@ -724,7 +724,7 @@ body {
 }
 
 .menu {
-   background: linear-gradient(rgba(0, 0, 0, 0.673), rgba(19, 18, 18, 0.622)),
+  background: linear-gradient(rgba(0, 0, 0, 0.673), rgba(19, 18, 18, 0.622)),
     url("/img/32-small.jpg") center/cover no-repeat;
   position: fixed;
   top: 0;
@@ -849,4 +849,3 @@ body {
 .icon-box-rooms2:hover {
   fill: rgb(68, 66, 66);
 }
-

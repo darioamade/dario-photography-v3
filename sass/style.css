@@ -90,8 +90,8 @@ body {
           align-items: center;
   z-index: 1000;
   overflow: hidden;
-  -webkit-transition: all 6s ease-in-out;
-  transition: all 6s ease-in-out;
+  -webkit-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 .preload-finish {
@@ -116,8 +116,8 @@ body {
   -webkit-animation: animate;
           animation: animate;
   animation-direction: alternate-reverse;
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
   -webkit-animation-fill-mode: forwards;
@@ -542,15 +542,6 @@ body {
   font-family: "Playfair Display";
   margin-bottom: 4rem;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-  -webkit-animation-name: moveInRight;
-          animation-name: moveInRight;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
 }
 
 @media only screen and (max-width: 75em) {
@@ -627,13 +618,6 @@ body {
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   -webkit-animation-delay: 6s;
           animation-delay: 6s;
-  opacity: 0;
-  -webkit-animation-name: moveInLeft;
-          animation-name: moveInLeft;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
 }
 
 @media only screen and (max-width: 75em) {
