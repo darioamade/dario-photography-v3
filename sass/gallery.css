@@ -199,8 +199,6 @@ body {
   padding: 3rem 2rem;
   position: relative;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
   letter-spacing: 1px;
   font-family: inherit;
   font-weight: 600;
@@ -232,6 +230,7 @@ body {
   .header5_content-links_nav__list__nav__link,
   .header6_content-links_nav__list__nav__link {
     font-size: 0.8rem;
+    padding: 3rem 1rem;
   }
 }
 

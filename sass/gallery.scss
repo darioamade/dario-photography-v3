@@ -150,8 +150,6 @@ body {
       padding: 3rem 2rem;
       position: relative;
       text-decoration: none;
-      font-weight: 500;
-      font-size: 14px;
       letter-spacing: 1px;
       font-family: inherit;
       font-weight: 600;
@@ -167,6 +165,7 @@ body {
       }
       @media (max-width: 906px) {
         font-size: 0.8rem;
+        padding: 3rem 1rem;
       }
       &:hover,
       &:active {
