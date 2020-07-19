@@ -211,7 +211,18 @@ body {
   color: #fff;
 }
 
-@media (min-width: 1143px) {
+@media (max-width: 1314px) {
+  .header_content-links_nav__list__nav__link,
+  .header2_content-links_nav__list__nav__link,
+  .header3_content-links_nav__list__nav__link,
+  .header4_content-links_nav__list__nav__link,
+  .header5_content-links_nav__list__nav__link,
+  .header6_content-links_nav__list__nav__link {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1143px) {
   .header_content-links_nav__list__nav__link,
   .header2_content-links_nav__list__nav__link,
   .header3_content-links_nav__list__nav__link,
@@ -288,9 +299,16 @@ body {
   height: 12rem;
 }
 
-@media only screen and (max-width: 849px) {
+@media only screen and (max-width: 1138px) {
   .logo {
     width: 16rem;
+    height: 10rem;
+  }
+}
+
+@media only screen and (max-width: 849px) {
+  .logo {
+    width: 14rem;
     height: 10rem;
   }
 }
@@ -1292,6 +1310,12 @@ a {
   max-width: 80rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .gallery-about {
+    padding: 0 2rem;
+  }
+}
+
 .nav-down {
   width: 35rem;
   min-height: 65rem;
@@ -1472,6 +1496,13 @@ a {
   width: 60rem;
   height: 70rem;
   border-radius: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-logo {
+    width: 40rem;
+    height: 50rem;
+  }
 }
 
 /*******************  CONTACT FORM*******************/
